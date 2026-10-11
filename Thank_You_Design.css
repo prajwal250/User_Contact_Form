@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(80deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 320% 320%;
+    animation: gradientBG 12.5s ease infinite;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+div {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    max-width: 652px;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #4cc9f0;
+}
+
+p {
+    font-size: 15px;
+    color: #cfd3ff;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #4cc9f0;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00d5ff;
+    border-bottom: 1.5px solid #00d5ff;
+    text-shadow: 0 0 8px rgba(76, 201, 240, 0.6);
+    transform: scale(1.03);
+}
+
+a:active {
+    color: #1f616e;
+    border-bottom: 1.5px solid #1f616e;
+    transform: scale(0.98);
+}
+
+#bth {
+    display: inline-block;
+    padding: 12.5px 25px;
+    background: #4cc9f0;
+    color: #000;
+    font-weight: 640;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+#bth:hover {
+    background: #00b4d8;
+    transform: scale(1.25);
+}
+
+#bth:active {
+    background: #065f71;
+    transform: scale(0.8);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'> <meta name = 'viewport' content = 'width = 1536, height = 730, initial-scale = 1.0'>
+        <title>Contact Support by Prajwal Das</title>
+        <link rel = 'stylesheet' href = 'Contact_Form_Design.css' />
+        <link rel = 'icon' href = 'Contact_Form_Logo_Icon.png' type = 'image/png' />
+    </head>
+    <body>
+        <form id = 'User_Contact_Form' autocomplete = 'off'>
+            <h1>Contact Support for Prajwal Das Web Services</h1>
+            <p>We value your feedback! <br>Report issues, suggest improvements, or share concerns about Prajwal Das' Web Applications!</p>
+            <label for = 'User_Name'>User Name</label>
+            <input type = 'text' id = 'User_Name' name = "User's Name" placeholder = 'Your Full Name' required>
+            <label for = 'User_Email'>Email Address</label>
+            <input type = 'email' id = 'User_Email' name = "User's Email Address" placeholder = 'Your Email' required>
+            <label for = 'User_Form_Website'>Website Related</label>
+            <input type = 'url' id = 'User_Form_Website' name = 'Website Concerned' placeholder = 'Website about which the Contact Form is' required>
+            <label for = 'User_Message_Type'>Type of Message</label>
+            <select id = 'User_Message_Type' name = 'Message Category' required>
+                <option value = ''>Select an option</option>
+                <option>Issue (General Concern or Unexpected Behavior)</option>
+                <option>Problem (Something is Seriously Wrong or Broken)</option>
+                <option>Suggestion</option>
+                <option>Complaint</option>
+                <option>Copy (Someone copied my site)</option>
+                <option>Other</option>
+            </select>
+            <label for = 'User_Complete_Message'>Your Message</label>
+            <textarea id = 'User_Complete_Message' name = 'Complete User Message' placeholder = 'Describe your issue, suggestion, or feedback...' maxlength = '5000' required></textarea>
+            <div style = 'display: inline-block;'><button type = 'submit'>Submit Form</button>
+            <button type = 'reset'>Reset Form</button></div>
+            <h3>Your feedback helps us improve. Thank you!</h3>
+        </form>
+    </body>
+    <script src = 'https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js'></script>
+    <script src = 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js'></script>
+    <script src = 'Contact_Form_Working.js'></script>
+    <noscript><style> body { display: block; } form { display: none; }</style><h1>JavaScript is disabled! <br>Please enable Javascript as it is neccesary for the working and proper functioning of this website.</h1></noscript>
+</html>

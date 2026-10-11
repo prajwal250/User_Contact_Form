@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #16213e, #2b2b4b, #0f3460, #072456, #1b3b73, #3b5581, #228a96);
+    background-size: 320% 320%;
+    animation: gradientBG 6.4s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: rgb(64, 64, 128);
+    padding: 16px 32px;
+    border-radius: 16px;
+    width: 50%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14.97px;
+    color: #cfd3ff;
+}
+
+label {
+    font-weight: 640;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 12.5px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(250, 250, 250, 0.125);
+    color: #fff;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: rgba(250, 250, 250, 0.2);
+    box-shadow: 0 0 0 2px #4cc9f0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(140, 164, 167);
+    font-weight: bolder;
+}
+
+select option {
+    color: #000;
+}
+
+textarea {
+    resize: none;
+    min-height: 128px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12.5px;
+    background: #4cc9f0;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 48.96431%;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #00d5ff;
+    transform: scale(1.04);
+}
+
+button:active {
+    background: #1f616e;
+    transform: scale(0.95);
+}
+
+button[type='reset'] {
+    background: red;
+}
+
+h3 {
+    text-align: center;
+    font-size: 12.5px;
+    color: #aaa;
+    margin-top: 11.93px;
+}
+
+noscript {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(204, 0, 0);
+    font-weight: bold;
+    z-index: 120;
+    background-color: rgb(165, 165, 64);
+    left: 20px;
+    right: 20px;
+    border: 2px solid;
+    border-radius: 16px;
+    top: 100px;
+    padding: 8px;
+}
